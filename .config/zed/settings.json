@@ -1,0 +1,52 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+    "project_panel": {
+        "dock": "right"
+    },
+    "assistant": {
+        "version": "2",
+        "enabled": false
+    },
+    "ui_font_size": 11,
+    "buffer_font_size": 11,
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "macOS Classic Dark2"
+    },
+    "vim_mode": true,
+    "relative_line_numbers": true,
+    "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+    "tab_bar": {
+        "show": true,
+        "show_nav_history_buttons": false
+    },
+    "tabs": {
+        "close_position": "left",
+        "file_icons": true,
+        "git_status": true,
+        "activate_on_close": "history"
+    },
+    "toolbar": {
+        "breadcrumbs": false,
+        "quick_actions": false
+    },
+    "scrollbar": {
+        "show": "system"
+    },
+    "buffer_line_height": {
+        "custom": 2
+    },
+    "show_completion_documentation": true,
+    "tab_size": 4,
+    "terminal": {
+        "font_family": "JetBrainsMono Nerd Font"
+    }
+}

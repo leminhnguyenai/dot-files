@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export GROUP_BG_COLOR=0x60EE4B2B
+export GROUP_BORDER_COLOR=0xffEE4B2B

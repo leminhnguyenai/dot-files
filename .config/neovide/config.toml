@@ -1,0 +1,7 @@
+frame = "transparent"
+
+[font]
+normal = ["JetBrainsMono Nerd Font Mono"]
+size = 12
+edging = "antialias"
+vsync = true

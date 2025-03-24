@@ -1,0 +1,11 @@
+[[database]]
+Name = 'notion_calendar'
+URL = 'mysql://root:Submarin3z.@localhost/notion_calendar'
+Provider = 'mysql'
+Username = ''
+Password = ''
+Hostname = ''
+Port = ''
+DBName = 'notion_calendar'
+URLParams = ''
+Commands = []

@@ -1,0 +1,25 @@
+theme = "nightfox"
+
+[editor]
+true-color = true
+bufferline = "always"
+line-number = "relative"
+rulers = [120]
+scroll-lines = 1
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+
+[editor.whitespace.characters]
+tabpad = "·"
+
+[editor.cursor-shape]
+insert = "block"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
+center = ["diagnostics"]
+right = ["selections", "register", "position", "file-encoding"]
+[editor.file-picker]
+hidden = false
+

@@ -1,0 +1,50 @@
+#!/bin/bash
+
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+ITEM_DIR="$CONFIG_DIR/items"
+
+##### Bar Appearance #####
+sketchybar --bar position=top height=40 blur_radius=30 color=0x00000000 margin=0 padding_left=10 padding_right=10
+
+### colors
+source "$CONFIG_DIR/colors.sh"
+
+### ui
+source "$CONFIG_DIR/ui.sh"
+
+##### Changing Defaults #####
+default=(
+  padding_left=6
+  padding_right=6
+  icon.font="JetBrainsMono Nerd Font Mono:Medium:13.0"
+  label.font="JetBrainsMono Nerd Font Mono:Medium:12.0"
+  icon.color=0xffffffff
+  label.color=0xffffffff
+  icon.padding_left=2
+  icon.padding_right=2
+  label.padding_left=2
+  label.padding_right=2
+)
+sketchybar --default "${default[@]}"
+
+# Adding Left Items #####
+source "$ITEM_DIR/aerospace.sh"
+source "$ITEM_DIR/separator.sh"
+source "$ITEM_DIR/front_app.sh"
+
+# Grouping spaces
+sketchybar --add bracket spaces '/space\..*/' \
+           --set         spaces "${FRAME[@]}"
+
+# Adding Right Items #####
+source "$ITEM_DIR/clock.sh"
+source "$ITEM_DIR/volume.sh"
+source "$ITEM_DIR/wifi.sh"
+source "$ITEM_DIR/battery.sh"
+
+# Grouping essential items
+sketchybar --add bracket essentials battery volume clock wifi \
+           --set         essentials "${FRAME[@]}"
+
+# Force all scripts to run the first time (never do this in a script) #####
+sketchybar --update
