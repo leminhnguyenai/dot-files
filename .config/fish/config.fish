@@ -11,14 +11,23 @@ fish_add_path /usr/bin
 fish_add_path /usr/local/bin
 
 starship init fish | source
-function config
-    if [ $argv = "add" ] 
-        /usr/bin/git --git-dir=$HOME/dot-files/ --work-tree=$HOME add ~/.config
-        /usr/bin/git --git-dir=$HOME/dot-files/ --work-tree=$HOME add ~/.tmux.conf
-        /usr/bin/git --git-dir=$HOME/dot-files/ --work-tree=$HOME add ~/.zshrc
-    else
-        /usr/bin/git --git-dir=$HOME/dot-files/ --work-tree=$HOME $argv
-    end
+
+function dotfiles
+    /usr/bin/git --git-dir=$HOME/dot-files/ --work-tree=$HOME $argv
+end
+
+function dotfiles_add
+    /usr/bin/git --git-dir=$HOME/dot-files/ --work-tree=$HOME add ~/.config
+    /usr/bin/git --git-dir=$HOME/dot-files/ --work-tree=$HOME add ~/.tmux.conf
+    /usr/bin/git --git-dir=$HOME/dot-files/ --work-tree=$HOME add ~/.zshrc
+end
+
+function dotfiles_commit
+    /usr/bin/git --git-dir=$HOME/dot-files/ --work-tree=$HOME commit -m "Update config"
+end
+
+function dotfiles_push
+    /usr/bin/git --git-dir=$HOME/dot-files/ --work-tree=$HOME push --all origin 
 end
 
 starship init fish | source

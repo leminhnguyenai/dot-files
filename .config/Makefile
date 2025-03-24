@@ -101,7 +101,7 @@ git:
 # Setting up dotfiles
 dotfiles:
 	echo "Cloning my dotfiles"
-	git clone git@github.com:leminhnguyenai/dot-files.git
+	git clone --bare git@github.com:leminhnguyenai/dot-files.git
 	mv dot-files ~
 
 
