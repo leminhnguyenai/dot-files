@@ -7,7 +7,7 @@ return {
 		---@type rainbow_delimiters.config
 		vim.g.rainbow_delimiters = {
 			blacklist = {
-				"html",
+				"html","lua"
 			},
 			strategy = {
 				[""] = rainbow_delimiters.strategy["global"],

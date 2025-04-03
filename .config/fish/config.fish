@@ -9,6 +9,7 @@ fish_add_path /opt/homebrew
 fish_add_path /opt/homebrew/bin
 fish_add_path /usr/bin
 fish_add_path /usr/local/bin
+fish_add_path go/bin
 
 starship init fish | source
 
@@ -31,3 +32,6 @@ function dotfiles_push
 end
 
 starship init fish | source
+
+# Created by `pipx` on 2025-04-02 06:26:45
+set PATH $PATH /Users/leminhnguyen/.local/bin

@@ -1,0 +1,29 @@
+{
+  "actions" : [
+    {
+      "key" : "a",
+      "label" : "",
+      "type" : "command",
+      "value" : "open /Applications/Arc.app"
+    },
+    {
+      "key" : "g",
+      "label" : "",
+      "type" : "command",
+      "value" : "open /Applications/Google\\ Chrome.app"
+    },
+    {
+      "key" : "t",
+      "label" : "",
+      "type" : "command",
+      "value" : "open /Applications/Ghostty.app"
+    },
+    {
+      "key" : "f",
+      "label" : "",
+      "type" : "command",
+      "value" : "open /System/Library/CoreServices/Finder.app"
+    }
+  ],
+  "type" : "group"
+}

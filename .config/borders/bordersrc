@@ -6,7 +6,7 @@ options=(
 	hidpi=on
 	active_color=0xffEE4B2B
 	inactive_color=0x00
-	# blacklist="Google Chrome,Arc"
+	blacklist="Steam"
 )
 
 borders "${options[@]}"

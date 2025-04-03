@@ -7,15 +7,14 @@ return {
 			formatters_by_ft = {
 				templ = { "templ" },
 				lua = { "stylua" },
-				-- javascript = { "prettierd", "prettier", stop_after_first = true },
-				typescript = { "prettierd", "prettier", stop_after_first = true },
+				javascript = { "prettierd" },
+				typescript = { "prettierd" },
 				go = { "goimports", "golines" },
 				c = { "clang_format" },
 				cpp = { "clang_format" },
 				python = { "black" },
 				json = { "jq" },
 				css = { "prettierd" },
-				javascript = { "prettierd" },
 				d2 = { "d2" },
 				zig = { "zigfmt" },
 			},
@@ -24,10 +23,10 @@ return {
 
 			formatters = {
 				goimports = {
-					command = "/Users/minhnl2012/go/bin/goimports",
+					command = "/Users/leminhnguyen/go/bin/goimports",
 				},
 				golines = {
-					command = "/Users/minhnl2012/go/bin/golines",
+					command = "/Users/leminhnguyen/go/bin/golines",
 					args = { "--max-len=110" },
 				},
 				jq = {
