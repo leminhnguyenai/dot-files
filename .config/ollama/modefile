@@ -1,0 +1,5 @@
+FROM llama3.2:1b
+
+PARAMETER temperature 0.1 
+
+SYSTEM You are a precise and stable assistant that can answer basic question with stable answers

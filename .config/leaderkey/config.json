@@ -1,29 +1,36 @@
 {
-  "actions" : [
+  "actions": [
     {
-      "key" : "a",
-      "label" : "",
-      "type" : "command",
-      "value" : "open /Applications/Arc.app"
+      "key": "a",
+      "label": "",
+      "type": "command",
+      "value": "open /Applications/Arc.app"
     },
     {
-      "key" : "g",
-      "label" : "",
-      "type" : "command",
-      "value" : "open /Applications/Google\\ Chrome.app"
+      "key": "g",
+      "label": "",
+      "type": "command",
+      "value": "open /Applications/Google\\ Chrome.app"
     },
     {
-      "key" : "t",
-      "label" : "",
-      "type" : "command",
-      "value" : "open /Applications/Ghostty.app"
+      "key": "t",
+      "label": "",
+      "type": "command",
+      "value": "open /Applications/Ghostty.app"
     },
     {
-      "key" : "f",
-      "label" : "",
-      "type" : "command",
-      "value" : "open /System/Library/CoreServices/Finder.app"
+      "key": "f",
+      "label": "",
+      "type": "command",
+      "value": "open /System/Library/CoreServices/Finder.app"
+    },
+    {
+      "key": "n",
+      "label": "",
+      "type": "command",
+      "value": "open https://github.com/new"
     }
   ],
-  "type" : "group"
+  "type": "group"
 }
+
