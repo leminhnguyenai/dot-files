@@ -1,0 +1,20 @@
+* {
+  font-family: "JetBrainsMono";
+}
+
+div.tab-header {
+  margin: 2px 0;
+}
+
+.mainbar {
+  padding-right: 10px;
+}
+
+.window-buttongroup.on-mainbar {
+  visibility: hidden;
+}
+
+#browser.linux:not(.native).address-top
+  .toolbar:has(.window-buttongroup.on-mainbar) {
+  padding-right: 0;
+}

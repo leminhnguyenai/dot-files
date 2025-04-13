@@ -1,0 +1,7 @@
+* {
+  font-family: "JetBrainsMono";
+}
+
+div.toolbar {
+  opacity: 0.7;
+}
