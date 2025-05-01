@@ -14,7 +14,6 @@ return {
 			},
 			link = {
 				wiki = {
-					highlight = "Directory",
 					icon = "",
 				},
 				custom = {
@@ -22,6 +21,11 @@ return {
 					youtube = { pattern = "^https://www.youtube.com", icon = "󰗃 ", highlight = "ErrorMsg" },
 					github = { pattern = "https://github.com", icon = " ", highlight = "@none" },
 					reddit = { pattern = "https://www.reddit.com", icon = " ", highlight = "@constructor" },
+				},
+			},
+			checkbox = {
+				custom = {
+					todo = { raw = "[~]", rendered = "󰀃 ", highlight = "@constructor", scope_highlight = nil },
 				},
 			},
 			quote = { repeat_linebreak = true },

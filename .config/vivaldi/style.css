@@ -18,3 +18,7 @@ div.tab-header {
   .toolbar:has(.window-buttongroup.on-mainbar) {
   padding-right: 0;
 }
+
+#header {
+  display: none;
+}

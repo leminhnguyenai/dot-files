@@ -47,6 +47,11 @@ bind("n", "<leader>td", function()
 	})
 end, { noremap = true, silent = true })
 
+-- Open Dbee
+bind("n", "<leader>db", function()
+	require("dbee").open()
+end)
+
 -- Oil.nvim keymaps
 bind("n", "<leader>oo", ":Oil<CR>")
 

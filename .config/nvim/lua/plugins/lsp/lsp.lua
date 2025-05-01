@@ -58,6 +58,7 @@ return {
 				function(server_name)
 					lspconfig[server_name].setup({
 						on_attach = on_attach,
+						-- capabilities = capabilities,
 					})
 				end,
 				["gopls"] = function()

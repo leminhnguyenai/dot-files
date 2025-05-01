@@ -22,13 +22,18 @@ return {
 
 		obsidian.setup({
 			workspaces = {
+				-- {
+				-- 	name = "mac",
+				-- 	path = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/",
+				-- },
 				{
-					name = "archive",
-					path = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/minhnl2012",
-				},
-				{
-					name = "personal",
-					path = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Elastikós",
+					name = "linux",
+					path = "~/note-taking/Elastikós",
+					overrides = {
+						daily_notes = {
+							folder = "daily notes",
+						},
+					},
 				},
 			},
 			ui = { enable = false },

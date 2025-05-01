@@ -38,6 +38,12 @@ vim.cmd("highlight ParenPurple guifg=#ff9bce")
 vim.cmd("highlight statusline guifg=white guibg=NONE gui=NONE")
 vim.cmd("highlight statuslineNC guifg=black guibg=NONE gui=NONE")
 
+-- Notification color adjustment --
+vim.cmd("highlight NotificationInfo guifg=#7CFC00 guibg=NONE")
+
+-- Modify zen bg color --
+vim.cmd("highlight ZenBg guibg=none")
+
 -- Markdown color options --
 assign("*.md", function()
 	vim.cmd("highlight @markup.heading.1.markdown guibg=#00FFFFFF guifg=#d29922 gui=bold")
@@ -47,6 +53,7 @@ assign("*.md", function()
 	vim.cmd("highlight NormalNC guibg=#00FFFFFF guifg=#EDEADE")
 	vim.cmd("highlight @markup.quote.markdown guibg=#00FFFFFF guifg=#FFF8DC gui=italic")
 	vim.cmd("highlight RenderMarkdownCodeInline guibg=#1d2a37 guifg=#ef3745 gui=bold")
+	vim.cmd("highlight @markup.link.label guifg=#4169E1 gui=bold")
 	vim.cmd("highlight RenderMarkdownCode guibg=#1d2a39")
 end)
 

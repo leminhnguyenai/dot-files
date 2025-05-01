@@ -36,3 +36,9 @@ vim.diagnostic.config({
 	underline = true,
 	update_in_insert = true,
 })
+
+vim.filetype.add({
+	extension = {
+		dataviewjs = "javascript",
+	},
+})

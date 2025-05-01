@@ -23,10 +23,10 @@ return {
 
 			formatters = {
 				goimports = {
-					command = "/Users/leminhnguyen/go/bin/goimports",
+					command = "/home/leminhohoho/go/bin/goimports",
 				},
 				golines = {
-					command = "/Users/leminhnguyen/go/bin/golines",
+					command = "/home/leminhohoho/go/bin/golines",
 					args = { "--max-len=110" },
 				},
 				jq = {

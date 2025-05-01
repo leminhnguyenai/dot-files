@@ -6,6 +6,7 @@ return {
 			TODO = { icon = " ", color = "info" },
 			COMMIT = { icon = " ", color = "github" },
 			BACKLOG = { icon = " ", color = "backlog" },
+			RNOTE = { icon = " ", color = "info" },
 		},
 
 		colors = {
